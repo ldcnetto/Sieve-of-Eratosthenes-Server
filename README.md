@@ -4,29 +4,6 @@
 
 Este repositório contém códigos em Go para servidores e clientes projetados para medir o Round-Trip Time (RTT) de comunicação através de TCP e UDP. O objetivo é avaliar o desempenho da rede sob diferentes protocolos.
 
-## Estrutura do Repositório
-
-O repositório está organizado da seguinte forma:
-
-├── README.md (Este arquivo)
-├── crivo/ (Códigos dos algoritmos)
-│ ├── crivo_concorrente.go (Servidor TCP)
-│ ├── crivo_nao_concorrente.go (Servidor UDP)
-│ └── results/ (Resultados com os valores primos)
-│ └── resultado_com_primos.json
-├── servers/ (Códigos dos servidores)
-│ ├── tcp_server.go (Servidor TCP)
-│ ├── udp_server.go (Servidor UDP)
-│ └── udp_server_ack.go (Servidor UDP com ACK)
-└── clients/ (Códigos dos clientes)
-├── tcp_client.go (Cliente TCP)
-├── udp_client.go (Cliente UDP)
-├── udp_client_ack.go (Cliente UDP com ACK e tratamento de perdas)
-└── results/ (Resultados)
-├── resultado_rtt_tcp.json
-├── resultado_rtt_udp.json
-└── resultado_rtt_udp_ack.json
-
 ## Descrição dos Códigos
 
 ### Servidores (`servers/`)
